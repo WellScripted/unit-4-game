@@ -1,0 +1,29 @@
+// Crystal Javascript
+
+
+//Variables
+
+var targetScore = 0;
+var currentScore = 0;
+var wins = 0;
+var losses = 0;
+
+var crystals = {
+    one: {
+
+    },
+
+    two: {
+
+    },
+
+    three: {
+
+    },
+
+    four: {
+        
+    }
+
+
+}
