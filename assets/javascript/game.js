@@ -66,9 +66,11 @@ var crystals = {
     startGame();
 //Check Win Function
     var checkWin = function() {
-//if currentScore > targetScore = userLost
-//i.e you're a loser -- increment loss and start game
-//else if currentScore = targetScore = userWon
+    if (currentScore > targetScore) {
+        //Code if they win
+    } else if (currentScore === targetScore) {
+        //Code if they win
+    }
 };
 
 //GAME LOGIC - EVENT HANDLES

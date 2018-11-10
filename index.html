@@ -8,7 +8,7 @@
 <meta http-equiv="X-UA-Compatable" content="ie=edge">
 
 <!--CSS, Bootstrap and JQuery Links-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"-->
 
 
 <!--Declaring Title-->
@@ -17,25 +17,41 @@
 
 <body>
     <!--Creating the Header-->
-    <header>
-        <h1> THE CRYSTAL COLLECTOR </h1>
-    </header>
+    <h1> THE CRYSTAL COLLECTOR </h1>
+    <hr />
+    
 
      <!--Creating Container & Row for the Rules-->
-     <div class="container" id="rules">
-         <div class="row">
-            <div class="col-xs-4" id="random-number"></div>
-                <p>You will be given a random number at the start of the game.</p>
-                <p> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
-                    total score.</p>
-                <p>You win the game by matching your total score to random number, you lose the game if your total score goes
-                    above the random number.</p>
-                <p>The value of each crystal is hidden from you until you click on it. Each time when the game starts, the game
-                    will change the values of each crystal.</p>
-         </div>
+     <div>
+        <p>You will be given a random number at the start of the game.</p>
+        <p> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+            total score.</p>
+        <p>You win the game by matching your total score to random number, you lose the game if your total score goes
+            above the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it. Each time when the game starts, the game
+            will change the values of each crystal.</p>
+         
      </div>
 
      <!--Create Container for Game Functions-->
+     <div>
+         <h2> Target Score </h2>
+         <h3 id="target-score">0</h3>
+     </div>
+
+     <div>
+         <h2>Crystals</h2>
+         <img src="assets/images/crystal-one.jpg" id="crystal-one" height="150px">
+         <img src="assets/images/crystal-two.jpg" id="crystal-two" height="150px">
+         <img src="assets/images/crystal-three.jpg" id="crystal-three" height="150px">
+         <img src="assets/images/crystal-four.jpg" id="crystal-four" height="150px">
+     </div>
+
+     <div>
+         <h2>Wins:<span id="wins">0</span></h2>
+         <h2>Losses:<span id="wins">0</span></h2>
+     </div>
+
 
 
 </body>
