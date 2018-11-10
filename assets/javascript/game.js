@@ -10,7 +10,7 @@ var losses = 0;
 
 var crystals = {
     one: {
-        name: "C0ne",
+        name: "COne",
         value: 0
     },
 
@@ -42,8 +42,8 @@ var crystals = {
 
 // Start Game Function
     var startGame = function() {
-        currentScore = 0;
-        $("#current-score").html(currentScore); //Create div-id on index.html
+        currentScore = 0
+        $("#current-score").html(currentScore); 
 
         targetScore = randomNumber(19, 120);
         $("#target-score").html(targetScore);
@@ -60,23 +60,58 @@ var crystals = {
         console.log("Crystal Four: ", crystals.four.value);
         console.log("--------------------");
 
-
     };
 
     startGame();
 //Check Win Function
     var checkWin = function() {
     if (currentScore > targetScore) {
-        //Code if they win
+        alert("You're total loser!");    //alert user that they lost
+        losses++;    //increment losses by one (using the ++ syntax)
+        document.getElementById("losses").innerHTML = losses;     //update the html for losses
+        startGame();
     } else if (currentScore === targetScore) {
-        //Code if they win
+        alert("You're a winner!"); // alert user that they won
+        wins++; // increment wins by one (using the ++ syntax)
+        document.getElementById("wins").innerHTML = wins; // update the html for wins
+        startGame();
     }
+    //
 };
 
 //GAME LOGIC - EVENT HANDLES
-$('crystal.one').on('click', function() {
+$("#crystal-one").on('click', function() {
     currentScore = currentScore + crystals.one.value;
+    $("#wins").html(wins);
+    $("#losses").html(losses);
     $("#current-score").html(currentScore);
-    checkWin(); //Slack Lindsey if stuck on creating check win function
+    checkWin(); 
+
+});
+
+$("#crystal-two").on('click', function() {
+    currentScore = currentScore + crystals.two.value;
+    $("#wins").html(wins);
+    $("#losses").html(losses);
+    $("#current-score").html(currentScore);
+    checkWin(); 
+
+});
+
+$("#crystal-three").on('click', function() {
+    currentScore = currentScore + crystals.three.value;
+    $("#wins").html(wins);
+    $("#losses").html(losses);
+    $("#current-score").html(currentScore);
+    checkWin(); 
+
+});
+
+$("#crystal-four").on('click', function() {
+    currentScore = currentScore + crystals.four.value;
+    $("#wins").html(wins);
+    $("#losses").html(losses);
+    $("#current-score").html(currentScore);
+    checkWin(); 
 
 });
