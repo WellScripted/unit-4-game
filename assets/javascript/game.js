@@ -66,7 +66,7 @@ var crystals = {
 //Check Win Function
     var checkWin = function() {
     if (currentScore > targetScore) {
-        alert("You're total loser!");    //alert user that they lost
+        alert("You're a total loser!");    //alert user that they lost
         losses++;    //increment losses by one (using the ++ syntax)
         document.getElementById("losses").innerHTML = losses;     //update the html for losses
         startGame();
@@ -82,8 +82,6 @@ var crystals = {
 //GAME LOGIC - EVENT HANDLES
 $("#crystal-one").on('click', function() {
     currentScore = currentScore + crystals.one.value;
-    $("#wins").html(wins);
-    $("#losses").html(losses);
     $("#current-score").html(currentScore);
     checkWin(); 
 
@@ -91,8 +89,6 @@ $("#crystal-one").on('click', function() {
 
 $("#crystal-two").on('click', function() {
     currentScore = currentScore + crystals.two.value;
-    $("#wins").html(wins);
-    $("#losses").html(losses);
     $("#current-score").html(currentScore);
     checkWin(); 
 
@@ -100,8 +96,6 @@ $("#crystal-two").on('click', function() {
 
 $("#crystal-three").on('click', function() {
     currentScore = currentScore + crystals.three.value;
-    $("#wins").html(wins);
-    $("#losses").html(losses);
     $("#current-score").html(currentScore);
     checkWin(); 
 
@@ -109,8 +103,6 @@ $("#crystal-three").on('click', function() {
 
 $("#crystal-four").on('click', function() {
     currentScore = currentScore + crystals.four.value;
-    $("#wins").html(wins);
-    $("#losses").html(losses);
     $("#current-score").html(currentScore);
     checkWin(); 
 
