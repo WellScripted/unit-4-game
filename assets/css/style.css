@@ -1,0 +1,24 @@
+h1, h2 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+#instructions {
+    margin-bottom: 20px;
+}
+
+.scores-1, .scores-2 {
+    border: 1px solid black;
+    text-align: center; 
+    padding: 1.5rem;
+    box-shadow: 1rem 1rem 1rem #777777;
+}
+
+.scores-1 {
+    margin-right: 2rem;
+    padding: 1.5rem;
+    margin-left: 5rem;
+}
+
+#crystals {
+    margin-top: 2rem;
+}
