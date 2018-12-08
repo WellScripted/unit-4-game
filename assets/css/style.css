@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 h1, h2 {
     font-family: 'Kaushan Script', cursive;
 }
@@ -22,45 +21,4 @@ h1, h2 {
 
 #crystals {
     margin-top: 2rem;
-=======
-h1 {
-    text-align: center;
-    font-style: normal;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 40px;
-    font-size: 32px;
-    font-display: bold;
-    background-color: aqua;
-    color: red
-}
-
-p {
-    font-family: 'Times New Roman', Times, serif;
-    font-display: bolder;
-    font-size: 16px;
-}
-
-h2, h3 {
-    padding: 20px;
-    font-size: 24px;
-}
-
-h2 {
-    float: left;
-}
-
-
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    padding: 20px 0;
-    clear: both;
-    font-size: 16px;
-    color: black;
-    background-color: grey;
-    text-align: center;
-    border-style: solid  
->>>>>>> a04906cc750fe7a541690509d45212b9255ebc3b
 }
